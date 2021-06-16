@@ -1,0 +1,353 @@
+img{
+    pointer-events: none;
+}
+
+h1{
+    display: inline-block;
+    color: white;
+}
+
+h5{
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+h4{
+    display: inline;
+    font-weight: 400;
+    cursor:text
+}
+
+
+form{
+    height: 24px;
+    width: 100%;
+}
+
+input{
+    height: 100%;
+}
+
+input.todo-input {
+    color: #fff;
+    font-size: large;
+}
+
+.todo-container{
+  width: auto;
+  /*max-width: 20rem;*/
+  height: 13rem;
+  padding: 0px 30px;
+  /*border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5);*/
+  align-items: center;
+  justify-content: center;
+
+}
+
+.todo .circle-btn {
+  width: 56px;
+  height: 44px;
+  background-color: #C7DBD0;
+}
+
+.todo .circle-btn:hover {
+background-image: url("akar-icons_check.svg");
+background-position-x: 5px;
+background-position-y: 5px;
+background-size: 27px;
+background-repeat: no-repeat;
+border: 2px solid white;
+}
+
+.fas {
+ font-weight:900;
+ color: white;
+}
+
+.fas.fa-plus {
+color: white;
+}
+
+
+.input-container, .todo-list-container{
+    display: flex;
+    /*background-color: rgb(124, 163, 177 , 0.66);*/
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.circle-btn, .delete, .clear-completed{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.circle-btn{
+    width: 30px;
+    height: 28px;
+    border-radius: 100%;
+    border: 1px solid white;
+
+    margin-right: 20px;
+    
+}
+
+.circle-btn:hover{
+    
+    border-color: hsl(234, 11%, 52%);
+    -webkit-transition: border-color 100ms linear;
+    -ms-transition: border-color 100ms linear;
+    transition: border-color 100ms linear;
+}
+
+.circle-btn:hover .fa-plus{
+    color:  hsl(234, 11%, 52%);
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+
+}
+
+.fa-plus{
+    /*width: 20px;*/
+    height: 20px;
+    margin-top: 5px;
+    color: hsl(237, 14%, 26%);
+}
+
+.fa-trash-alt{
+    font-weight: 100;
+    font-size: x-large;
+}
+
+.delete{
+    float: right;
+    background-image: url("trash.svg");
+    width: 4rem;
+    background-repeat: no-repeat;
+}
+
+.todo-input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:  white;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 6px;
+}
+
+.todo-list-container{
+    display: block;
+    padding:0%;
+}
+
+.todo-list{
+    /*width: 100%;*/
+    list-style: none;
+    color: hsl(234, 63.2%, 37.3%);
+    line-height: 2rem;
+    transition: none;
+    padding-left: 0px;
+    word-wrap: anywhere;
+}
+
+.todo{
+    display: flex;
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+    padding: 20px 20px 15px 20px;
+    cursor: grab;
+    transition:  padding 100ms linear;
+    font-size: 24px;
+}
+
+.todo.completed{
+    transition: padding 100ms linear;
+}
+
+.check{
+    opacity: 0;
+    margin-top: 4px;
+}
+
+.circle-btn:hover .check{
+    opacity: 70%;
+    
+    -webkit-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+
+}
+
+.completed .check{
+    opacity: 100%;
+    
+}
+
+.todo-item{
+    width: 100%;
+    padding-top: 6px;
+}
+
+.completed{
+    color: hsl(233, 14%, 35%);
+    text-decoration: line-through;
+    transition: none;
+
+}
+
+.completed .circle-btn{
+    background-image: url("akar-icons_check.svg");
+    background-position-x: 0.4rem;
+    background-position-y: 5px;
+    background-size: 27px;
+    background-repeat: no-repeat;
+    background-color: #00b7ff70;
+}
+
+.filters-container{
+    /*width: 25rem;*/
+    color:hsl(233, 14%, 35%);
+    /*display: flex;*/
+    padding: 20px 20px;
+    justify-content: space-between;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters.filters2 {
+padding-bottom: 70px;
+}
+
+.filters label:hover{
+    color:  hsl(234, 11%, 52%);
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+}
+
+.clear-completed h4{
+    font-weight: 700;
+    color:  hsl(233, 14%, 35%);
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+
+.clear-completed h4:hover{
+    color:  hsl(234, 11%, 52%);
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+}
+
+.tip{
+    color:  hsl(233, 14%, 35%);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.hiding{
+    overflow: hidden;
+    height: 0;
+    padding: 0px 20px 0px 20px;
+    border: none;
+    -webkit-transition:  100ms linear;
+    -ms-transition: 100ms linear;
+    transition: 100ms linear;
+}
+
+.filters input[type="radio"] {
+    display: none;
+}
+
+.filters label {
+  display: inline-block;
+  font-weight: 700;
+  padding: 4px 8px;  
+  cursor: pointer;
+}
+
+.filters input[type="radio"]:checked+label {
+  color: hsl(220, 98%, 61%);
+  
+}
+
+.input-container.shadow {
+background: #5DB195;
+}
+
+.submit-second {
+    border-style: none;
+    background: none;
+    cursor: pointer;
+}
+
+/*.shadow{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 50px 0px;
+}*/
+
+@media (max-width: 880px){
+  .filters label {
+    display: inline-block;
+    font-weight: 700;
+    padding: 4px 4px;  
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 621px) {
+  .todo-container{
+    width: 30rem;
+  }
+  .filters-container {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .todo-container {
+    width: 81%;
+}
+}
+
+@media screen and (max-width: 376px) {
+  /*.todo-container{
+    width: 17rem;
+  }*/
+}
+
+@media screen and (max-width: 321px) {
+  body{
+    font-size: small;
+  }
+  .todo-container{
+    width: 15rem;
+  }
+  .todo-input {
+    font-size: unset;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .todo-container {
+  width: auto;
+  padding: 0.5rem;
+  }
+  .input-container, .todo-list-container {
+    padding: 4px;
+}
+}
+
+@media screen and (max-width: 260px) {
+  
+  .delete{
+    width: 4.8rem;
+  }
+}

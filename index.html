@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My organizer</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./calculator/style.css">
+    <link rel="stylesheet" href="./bookmark/style.css">
+    <link rel="stylesheet" href="./todo/style.css">
+    <link rel="stylesheet" href="./calendar/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="content">
+        <div class="container1 test" id="container1">
+            <div class="calendar-container">
+              <div class="calendar">
+                <div class="month">
+                  <i class="fas fa-angle-left prev"></i>
+                  <div class="date">
+                    <h2></h2>
+                    <p></p>
+                  </div>
+                  <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                  <div>Sun</div>
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                </div>
+                <div class="days"></div>
+              </div>
+            </div>
+        </div>
+        <div class="container2 test" id="container2">
+                <div class="calculator">
+                    <div class="calculator-display">
+                        <h1 id="h1">0</h1>
+                    </div>
+                    <div class="calculator-buttons">
+                        <button class="operator" value="+">+</button>
+                        <button class="operator" value="-">-</button>
+                        <button class="operator" value="*">×</button>
+                        <button class="operator" value="/">÷</button>
+                        <button value="7">7</button>
+                        <button value="8">8</button>
+                        <button value="9">9</button>
+                        <button value="4">4</button>
+                        <button value="5">5</button>
+                        <button value="6">6</button>
+                        <button value="1">1</button>
+                        <button value="2">2</button>
+                        <button value="3">3</button>
+                        <button class="decimal" value=".">.</button>
+                        <button value="0">0</button>
+                        <button class="clear" id="clear-btn">C</button>
+                        <button class="equal-sign operator" value="=">=</button>
+                    </div>
+                </div>
+        </div>
+
+        <div class="container3 test" id="container3">
+            <div class="add-container"><h8 id="show-modal">Add Bookmark</h8></div>
+                <div class="book-container" id="bookmarks-container"></div>
+                <div class="modal-container" id="modal">
+                    <div class="modal">
+                        <i class="fas fa-times close-icon" id="close-modal"></i>
+                        <div class="modal-header">
+                            <h3>Add Bookmark</h3>
+                        </div>
+                        <div class="modal-content">
+                            <form id="bookmark-form">
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="website-name">Website Name</label>
+                                    <input class="form-input" type="text" id="website-name">                      
+                                </div>
+                             <!-- > -->
+                                <div class="form-group">
+                                    <label class="form-label" for="website-url">Website URL</label>
+                                    <input class="form-input" type="text" id="website-url">          
+                                </div>
+                                <button type="submit">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="container4 test" id="container4">
+            <div class="todo-container" id="todo-container"> 
+                <br>
+                <br>
+                <div class="input-container shadow">
+                  <button class="circle-btn submit" type="submit">
+                    <i class="fas fa-plus"></i>
+                  </button>
+
+                  <form autocomplete="off" name="todo-form">
+                    <input name="input" type="text" class="todo-input" placeholder="Create a new todo...">
+                  </form>
+                </div>
+                <br>
+                <div class="todo-list-container shadow">
+                      <ul class="todo-list">
+                        
+                      </ul>
+                    <div class="filters-container" id="commands">
+       
+                        <div class="filters">
+                            <input type="radio" id="radio1" checked="checked" name="radio" value="All">
+                            <label for="radio1">All</label>
+
+                            <input type="radio" id="radio2" name="radio" value="Active">
+                            <label for="radio2">Active</label>
+
+                            <input type="radio" id="radio3" name="radio" value="Completed">
+                            <label for="radio3">Completed</label>
+                        </div>
+                        <div class="filters filters2">
+                            <h5><span class="num-items"> </span>items left</h5>
+                            <button class="clear-completed">
+                              <h4>Clear Completed</h4> 
+                            </button>
+                            <button class="submit-second" type="submit">
+                                <img src="./todo/plus.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div class="navigation">
+            <div class="calendar-nav">
+                <a href="#container1">
+                    <i class="fas fa-calendar-plus"></i>
+                </a>
+            </div>
+            <div class="calculator-nav">
+                <a href="#container2"><i class="fas fa-calculator"></i>
+                </a>
+            </div>
+            <div class="bookmark-nav">
+                <a href="#container3"><i class="far fa-bookmark"></i>
+                </a>
+            </div>
+            <div class="task-nav">
+                <a href="#container4"><i class="fas fa-tasks"></i>
+                </a>
+            </div>
+        </div>
+    </footer> 
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="./calculator/script.js"></script>
+    <script src="./calendar/script.js"></script>
+    <script src="./bookmark/script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+    <script src="./todo/script.js"></script>
+</body>
+</html>
