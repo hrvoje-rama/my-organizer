@@ -139,6 +139,22 @@
   }*/
 }
 
+@media screen and (max-width: 420px) {
+  .weekdays {
+  padding: 0 30px 0 30px;
+  padding: 0 10px;
+  }
+  .weekdays div {
+  letter-spacing: 0.1rem;
+  font-size: 18px;
+  font-size: 16px;
+  }
+  .days {
+  padding-left: 2.2rem;
+  padding-left: 0.4rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .calendar {
   width: 18.5rem;
